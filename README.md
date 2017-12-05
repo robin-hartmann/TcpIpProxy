@@ -14,4 +14,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-* @MobisysGmbH for letting me publish this project and being a great place to work
+* [mobisys GmbH](https://github.com/mobisysgmbh) for letting me publish this project and being a great place to work
