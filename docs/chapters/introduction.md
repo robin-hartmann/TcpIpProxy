@@ -13,13 +13,13 @@ The console can display received data as raw text or in hexadecimal representati
 
 To be able to use the *TCP/IP-Proxy*, .NET Framework version 4.5 or higher has to be installed on your computer.
 
-To start the application, you just have to execute "TcpIpProxy.exe". An installation is not needed.
+To start the application, you just have to execute `TcpIpProxy.exe`. An installation is not needed.
 
 
 ## User Interface
 
 ### Main Window
-![Main Window](images/user-interface-main-window.png)
+![Main Window](../images/user-interface-main-window.png)
 
 ### Preferences Window
-![Preferences Window](images/user-interface-preferences-window.png)
+![Preferences Window](../images/user-interface-preferences-window.png)
