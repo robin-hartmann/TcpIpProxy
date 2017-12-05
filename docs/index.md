@@ -7,11 +7,11 @@
 - ### [User Interface](/docs/chapters/introduction.md#user-interface)
 
 ## [Client Instructions](/docs/chapters/instructions-client.md)
-- ### [Sending Requests](/docs/chapters/instructions-client#sending-requests)
+- ### [Sending Requests](/docs/chapters/instructions-client.md#sending-requests)
 
 ## [Server Instructions](/docs/chapters/instructions-server.md)
-- ### [Hosting a Server](/docs/chapters/instructions-server#hosting-a-server)
-- ### [Responding to Requests](/docs/chapters/instructions-server#responding-to-requests)
+- ### [Hosting a Server](/docs/chapters/instructions-server.md#hosting-a-server)
+- ### [Responding to Requests](/docs/chapters/instructions-server.md#responding-to-requests)
 
 ## [Console Instructions](/docs/chapters/instructions-console.md)
 - ### [Clearing the Console](/docs/chapters/instructions-console.md#clearing-the-console)
