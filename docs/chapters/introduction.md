@@ -19,7 +19,7 @@ To start the application, you just have to execute "TcpIpProxy.exe". An installa
 ## User Interface
 
 ### Main Window
-![Main Window](/images/user-interface-main-window.png)
+![Main Window](/docs/images/user-interface-main-window.png)
 
 ### Preferences Window
-![Preferences Window](/images/user-interface-preferences-window.png)
+![Preferences Window](/docs/images/user-interface-preferences-window.png)
