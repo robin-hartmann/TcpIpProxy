@@ -2,11 +2,11 @@
 
 A TCP/IP client and server able to translate hex values contained in a lightweight .NET 4.5 app
 
-## [Documentation](/docs/index.md#documentation)
+## [Documentation](https://robinhartmann.github.io/TcpIpProxy/)
 
 ## Authors
 
-* **Robin Hartmann** - *Initial work* - [RobinHartmann](https://robinhartmann.github.io/TcpIpProxy/)
+* **Robin Hartmann** - *Initial work* - [RobinHartmann](https://github.com/RobinHartmann)
 
 ## License
 
