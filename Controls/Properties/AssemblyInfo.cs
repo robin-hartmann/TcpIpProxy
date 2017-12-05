@@ -7,12 +7,12 @@ using System.Windows;
 // Allgemeine Informationen über eine Assembly werden über die folgenden 
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die mit einer Assembly verknüpft sind.
-[assembly: AssemblyTitle("Behaviors")]
+[assembly: AssemblyTitle("Controls")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Mobisys GmbH")]
-[assembly: AssemblyProduct("Behaviors")]
-[assembly: AssemblyCopyright("© Copyright 2015 Mobisys GmbH. Alle Rechte vorbehalten.")]
+[assembly: AssemblyCompany("Robin Hartmann")]
+[assembly: AssemblyProduct("TcpIpProxy")]
+[assembly: AssemblyCopyright("MIT")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

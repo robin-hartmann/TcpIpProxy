@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Behaviors")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Mobisys GmbH")]
-[assembly: AssemblyProduct("Behaviors")]
-[assembly: AssemblyCopyright("© Copyright 2015 Mobisys GmbH. Alle Rechte vorbehalten.")]
+[assembly: AssemblyCompany("Robin Hartmann")]
+[assembly: AssemblyProduct("TcpIpProxy")]
+[assembly: AssemblyCopyright("MIT")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

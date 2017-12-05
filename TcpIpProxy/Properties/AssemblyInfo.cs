@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("TcpIpProxy")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Mobisys GmbH")]
+[assembly: AssemblyCompany("Robin Hartmann")]
 [assembly: AssemblyProduct("TcpIpProxy")]
-[assembly: AssemblyCopyright("© Copyright 2015 Mobisys GmbH. Alle Rechte vorbehalten.")]
+[assembly: AssemblyCopyright("MIT")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
