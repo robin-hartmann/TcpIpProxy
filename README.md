@@ -6,7 +6,7 @@ A TCP/IP client and server able to translate hex values contained in a lightweig
 
 ## Authors
 
-* **Robin Hartmann** - *Initial work* - [RobinHartmann](https://github.com/RobinHartmann)
+* **Robin Hartmann** - *Initial work* - [RobinHartmann](https://robinhartmann.github.io/TcpIpProxy/)
 
 ## License
 
