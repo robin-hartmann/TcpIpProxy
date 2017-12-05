@@ -1,0 +1,153 @@
+﻿<Window x:Class="TcpIpProxy.GUI.PreferencesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ext="clr-namespace:Controls.Derived.TextBox;assembly=Controls"
+        WindowStartupLocation="CenterOwner"
+        SizeToContent="Height"
+        ShowInTaskbar="False"
+        ResizeMode="NoResize"
+        Background="#FFF1EDED"
+        Title="Preferences" Width="230">
+    <Window.Resources>
+        <ResourceDictionary Source="/Resources/ControlsResources.xaml"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Row="0"
+                  Header="Connection"
+                  BorderBrush="{StaticResource borderBrushLight}"
+                  Margin="5, 2, 5, 0">
+            <Grid Margin="0,3,0,-3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Content="Timeout Send [ms]:"
+                       Margin="-1,-2,0,0"/>
+                <ext:IntegerTextBox Name="tbxSendTimeout"
+                                    TextChanged="TextChanged"
+                                    Minimum="0"
+                                    Width="50"
+                                    HorizontalAlignment="Right"
+                                    Margin="0,0,3,5"/>
+                <Label Grid.Row="1"
+                       Content="Timeout Receive [ms]:"
+                       Margin="-1,-2,0,0"/>
+                <ext:IntegerTextBox Grid.Row="1"
+                                    Name="tbxReceiveTimeout"
+                                    TextChanged="TextChanged"
+                                    Minimum="0"
+                                    Width="50"
+                                    HorizontalAlignment="Right"
+                                    Margin="0,0,3,5"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Grid.Row="1"
+                  Header="Text Processing"
+                  BorderBrush="{StaticResource borderBrushLight}"
+                  Margin="5, 0, 5, 0">
+            <Grid Margin="0,3,0,-3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Content="Control chars replacement:"
+                       Margin="-1,-2,0,0"/>
+                <ext:ValidatingTextBox Name="tbxNonPrintableReplacer"
+                                       TextChanged="TextChanged"
+                                       TextPattern=".+"
+                                       ToolTipText="Has to contain a single character"
+                                       FontFamily="Consolas"
+                                       Height="22"
+                                       MaxLength="1"
+                                       Width="27"
+                                       HorizontalAlignment="Right"
+                                       VerticalContentAlignment="Center"
+                                       Margin="0,0,3,5"/>
+                <Label Grid.Row="1" 
+                       Content="Hex output format:"
+                       Margin="-1,-2,0,0"/>
+                <!--"{}" is the escape sequence in xaml-->
+                <ext:ValidatingTextBox Grid.Row="1"
+                                       TextChanged="TextChanged"
+                                       Name="tbxHexOutputFormat"
+                                       ToolTipText="Has to contain {0} where the hexadecimal numbers should be placed&#10;Has to contain exactly two other characters excluding { and }"
+                                       TextPattern="{}([^{}]{2}\{0\})|(\{0\}[^{}]{2})|([^{}]\{0\}[^{}])"
+                                       ToolTipShowDuration="10000"
+                                       FontFamily="Consolas"
+                                       Height="22"
+                                       MaxLength="5"
+                                       Width="45"
+                                       HorizontalAlignment="Right"
+                                       VerticalContentAlignment="Center"
+                                       Margin="0,0,3,5"/>
+                <CheckBox Grid.Row="2" 
+                          Name="chbReplaceHex"
+                          Checked="CheckedChanged"
+                          Unchecked="CheckedChanged"
+                          Content="Translate Hex in Req. and Resp."
+                          Margin="4,1,0,6"/>
+                <Label Grid.Row="3" 
+                       Content="Hex input format:"
+                       IsEnabled="{Binding Path=IsChecked, ElementName=chbReplaceHex}"
+                       Margin="-1,-2,0,0"/>
+                <ext:ValidatingTextBox Grid.Row="3"
+                                       TextChanged="TextChanged"
+                                       Name="tbxHexInputFormat"
+                                       ToolTipText="Has to contain {0} where the hexadecimal numbers should be placed&#10;Has to contain exactly two other characters excluding { and }"
+                                       TextPattern="{}([^{}]{2}\{0\})|(\{0\}[^{}]{2})|([^{}]\{0\}[^{}])"
+                                       ToolTipShowDuration="10000"
+                                       FontFamily="Consolas"
+                                       Height="22"
+                                       MaxLength="5"
+                                       Width="45"
+                                       HorizontalAlignment="Right"
+                                       VerticalContentAlignment="Center"
+                                       IsEnabled="{Binding Path=IsChecked, ElementName=chbReplaceHex}"
+                                       Margin="0,0,3,5"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Grid.Row="2"
+                  Header="Encoding"
+                  BorderBrush="{StaticResource borderBrushLight}"
+                  Margin="5, 0, 5, 0">
+            <Grid Margin="0,3,0,-3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Content="Clients:"
+                       Margin="-1,-2,0,0"/>
+                <ComboBox Name="cbxClientEncoding"
+                          SelectionChanged="SelectionChanged"
+                          Width="130"
+                          HorizontalAlignment="Right"
+                          Margin="0,0,3,5"/>
+                <Label Grid.Row="1" 
+                       Content="Server:"
+                       Margin="-1,-2,0,0"/>
+                <ComboBox Grid.Row="1"
+                          SelectionChanged="SelectionChanged"
+                          Name="cbxServerEncoding"
+                          Width="130"
+                          HorizontalAlignment="Right"
+                          Margin="0,0,3,5"/>
+            </Grid>
+        </GroupBox>
+        <Button Grid.Row="3" Content="Restore Defaults" Width="{Binding Path=Width, ElementName=btnOk}" Margin="7, 5, 7, 0" Click="Defaults_Click"/>
+        <UniformGrid Grid.Row="5" Margin="2, 7, 7, 7" Rows="1">
+            <Button Name="btnOk" IsDefault="True" Content="OK" Margin="5, 0, 0, 0"  Click="Ok_Click"/>
+            <Button Content="Cancel" IsCancel="True" Margin="5, 0, 0, 0"  Click="Cancel_Click"/>
+            <Button Name="btnApply" Content="Apply" Margin="5, 0, 0, 0"  Click="Apply_Click" IsEnabled="False"/>
+        </UniformGrid>
+    </Grid>
+</Window>

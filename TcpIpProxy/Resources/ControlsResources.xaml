@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <Color x:Key="themeColour">Lightgray</Color>
+    <Color x:Key="backgroundColour">#FFF1EDED</Color>
+    <SolidColorBrush x:Key="borderBrushLight" Color="{StaticResource themeColour}"/>
+    <SolidColorBrush x:Key="borderBrushStrong" Color="Gray"/>
+    <Thickness x:Key="statusBarTextMargin">2, -2, 0, 0</Thickness>
+    <sys:Double x:Key="gridSplitterSize">3</sys:Double>
+    <sys:Double x:Key="buttonFontSize">13</sys:Double>
+    <sys:Double x:Key="buttonHeight">28</sys:Double>
+    <sys:Double x:Key="statusBarTextFontSize">12</sys:Double>
+</ResourceDictionary>

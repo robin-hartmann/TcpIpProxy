@@ -1,0 +1,10 @@
+﻿<Application x:Class="TcpIpProxy.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             DispatcherUnhandledException="Application_DispatcherUnhandledException"
+             StartupUri="GUI\MainWindow.xaml">
+    <Application.Resources>
+        <!--Prevents context menus from flickering when they become visible-->
+        <PopupAnimation x:Key="{x:Static SystemParameters.MenuPopupAnimationKey}">None</PopupAnimation>
+    </Application.Resources>
+</Application>

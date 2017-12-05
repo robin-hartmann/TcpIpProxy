@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="TcpIpProxy.GUI.Cntrls.HexConsole"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:b="clr-namespace:Behaviors.ScrollViewer;assembly=Behaviors"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <ContextMenu x:Key="TextBoxContextMenu">
+            <MenuItem Command="Copy"/>
+            <Separator/>
+            <MenuItem Header="Copy Console" Click="CopyConsole_Click">
+                <MenuItem.Icon>
+                    <Image Source="/Resources/Copy.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="Clear Console" Click="ClearConsole_Click">
+                <MenuItem.Icon>
+                    <Image Source="/Resources/ClearWindowContent.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+        </ContextMenu>
+        <Style TargetType="TextBox">
+            <Setter Property="FontFamily" Value="Consolas"/>
+            <Setter Property="TextWrapping" Value="NoWrap"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Disabled"/>
+            <Setter Property="HorizontalScrollBarVisibility" Value="Disabled"/>
+            <Setter Property="ContextMenu" Value="{StaticResource TextBoxContextMenu}"/>
+        </Style>
+    </UserControl.Resources>
+    <ScrollViewer Name="scrollViewerGlobal" Grid.Column="0" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled">
+        <i:Interaction.Behaviors>
+            <b:AutoScrollBehavior/>
+        </i:Interaction.Behaviors>
+        <Grid VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Recycling">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Name="ColumnTextBoxHex" Width="3.7*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Name="textBoxState" Grid.Column="0"/>
+            <GridSplitter Name="gridSplitterStatus" Grid.Column="1" Background="LightGray" VerticalAlignment="Stretch" IsTabStop="False" ResizeBehavior="PreviousAndNext" Width="3"/>
+            <TextBox Name="textBoxHex" Grid.Column="2"/>
+            <GridSplitter Name="gridSplitterHex" Grid.Column="3" Background="LightGray" VerticalAlignment="Stretch" IsTabStop="False" ResizeBehavior="PreviousAndNext" Width="3"/>
+            <TextBox Name="textBoxMessage" Grid.Column="4" SizeChanged="TextBoxMessage_SizeChanged"/>
+        </Grid>
+    </ScrollViewer>
+</UserControl>
