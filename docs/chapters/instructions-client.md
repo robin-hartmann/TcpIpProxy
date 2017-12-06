@@ -14,7 +14,7 @@ Click on *Send Request*.
 
 Check the field *Automatic*, configure a time interval in *Interval* (measured in milliseconds) and click on *Start Timer*.
 
->### :information_source: Note
+>### Note
 >
 >The request field is read-only, as long as the field *Automatic* is checked. This also applies to the fields *IP* and *Port* under *Remote Host*.
 >
