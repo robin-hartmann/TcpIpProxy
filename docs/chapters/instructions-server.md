@@ -4,7 +4,7 @@
 
 In *Port* under *Local Host* enter the port, under which the server should be available and then click on *Start Server*.
 
->#### :information_source: Note
+>### :information_source: Note
 >
 >The current server status is displayed in the lower left corner of the main window.
 >
@@ -22,7 +22,7 @@ Feed the data to be transferred into the response field and check the field *Aut
 
 Now the server will respond to every request with the given data.
 
->#### :information_source: Note
+>### :information_source: Note
 >
 >The response field is read-only, as long as the field *Automatic* is checked.
 
@@ -36,7 +36,7 @@ To create a Command, double-click on the last row, fill in *Request* and then *R
 
 To delete a Command, click on the respective row and press the delete key on your keyboard.
 
->#### :information_source: Note
+>### :information_source: Note
 >
 >The request part of a Command can’t be empty.
 
