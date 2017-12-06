@@ -2,7 +2,7 @@
 
 Click on the menu *Settings* and choose *Preferences…* to open the preferences window.
 
-> #### :grey_exclamation: Notes
+> #### :information_source: Notes
 >
 >The settings are not persisted, they are lost upon exiting the application.
 

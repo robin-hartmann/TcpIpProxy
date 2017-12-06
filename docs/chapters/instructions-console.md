@@ -4,7 +4,7 @@ All actions of the clients and the server and any incoming or outgoing transmiss
 
 The first column carries a timestamp with the ID of the respective client or server and it shows a description of the action performed. If data was transferred, it will be displayed in hexadecimal representation in the 2nd and as raw text in the 3rd column.
 
-> #### :grey_exclamation: Notes
+> #### :information_source: Notes
 >
 >You can hide the timestamp by unchecking *Add Timestamp* under *Console*.
 >
