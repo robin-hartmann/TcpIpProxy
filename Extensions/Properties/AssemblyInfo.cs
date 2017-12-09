@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Extensions")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Robin Hartmann")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("TcpIpProxy")]
-[assembly: AssemblyCopyright("MIT")]
+[assembly: AssemblyCopyright("Copyright (c) 2017 Robin Hartmann")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
