@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* [Visual Studio 2015/2017](https://www.visualstudio.com/de/vs/) - An IDE for developing .NET apps
+* [Visual Studio 2015/2017](https://www.visualstudio.com/de/vs/) - Fully-featured IDE for Android, iOS, Windows, web, & cloud
 
 ## Deployment
 
