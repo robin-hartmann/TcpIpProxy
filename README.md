@@ -1,6 +1,6 @@
 # TcpIpProxy
 
-A TCP/IP client and server able to translate hex values contained in a lightweight .NET 4.5 app
+A TCP/IP client and server able to translate hex values
 
 ![Main Window](docs/images/main-window.png)
 
@@ -13,6 +13,12 @@ These instructions will get you a copy of the project up and running on your loc
 * [Visual Studio 2015/2017](https://www.visualstudio.com/de/vs/) - Fully-featured IDE for Android, iOS, Windows, web, & cloud
 
 ## Deployment
+
+### Prerequisites
+
+* [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653)
+
+### Installation
 
 Just copy over `TcpIpProxy.exe` and run it. An installation is not needed.
 
