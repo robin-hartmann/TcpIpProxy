@@ -4,8 +4,6 @@ A TCP/IP client and server able to translate hex values contained in a lightweig
 
 ![Main Window](docs/images/main-window.png)
 
-## [Documentation](https://robinhartmann.github.io/TcpIpProxy/)
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -17,6 +15,8 @@ These instructions will get you a copy of the project up and running on your loc
 ## Deployment
 
 Just copy over `TcpIpProxy.exe` and run it. An installation is not needed.
+
+## [Documentation](https://robinhartmann.github.io/TcpIpProxy/)
 
 ## Built With
 
