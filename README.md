@@ -20,7 +20,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installation
 
-Just copy over `TcpIpProxy.exe` and run it. An installation is not needed.
+Just copy over the generated `TcpIpProxy.exe` and run it. An installation is not needed.
 
 ## [Documentation](https://robinhartmann.github.io/TcpIpProxy/)
 
