@@ -1,6 +1,6 @@
 # TcpIpProxy
 
-A TCP/IP client and server able to translate hex values
+TCP/IP client and server for viewing traffic with built-in hex display
 
 ![Main Window](docs/images/main-window.png)
 
