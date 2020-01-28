@@ -1,6 +1,6 @@
 # TcpIpProxy
 
-TCP/IP client and server for viewing traffic with built-in hex display
+TCP/IP client and server for viewing network traffic with built-in hex display
 
 ![Main Window](docs/images/main-window.png)
 
