@@ -4,7 +4,7 @@ TCP/IP client and server for viewing network traffic with built-in hex display
 
 ![Main Window](docs/images/main-window.png)
 
-## Deployment
+## ⚡ Deployment
 
 These instructions will get you a release of this project up and running on your local machine, so that you can start using it.
 
