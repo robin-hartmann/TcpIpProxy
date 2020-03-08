@@ -16,7 +16,7 @@ These instructions will get you a release of this project up and running on your
 
 Just copy over `TcpIpProxy.exe` and run it. An installation is not needed.
 
-## 📚 [Documentation](https://robin-hartmann.github.io/TcpIpProxy/)
+## 📘 [Documentation](https://robin-hartmann.github.io/TcpIpProxy/)
 
 ## 🛠️ Development
 
@@ -36,7 +36,7 @@ These instructions will get you a copy of this project up and running on your lo
 
 ## 📃 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👍 Acknowledgments
 
