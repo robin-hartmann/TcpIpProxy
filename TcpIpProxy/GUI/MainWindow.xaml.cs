@@ -1,5 +1,6 @@
 ﻿using Behaviors.DataGrid;
 using Extensions;
+using Microsoft.Xaml.Behaviors;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -8,7 +9,6 @@ using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Interactivity;
 using TcpIpProxy.Networking;
 using TcpIpProxy.Threading;
 
